@@ -82,7 +82,11 @@ MNISTによる影響
 ## 4.ディレクトリ構成
 bpnn-vs-cnn-experiment/
 ├── README.md
+
 ├── notebooks/
+
    ├── preprocessing.ipynb    # 共通前処理
+   
    ├── model_bpnn.ipynb       # BPNNの構造
+   
    └── model_cnn.ipynb        # CNNの構造
