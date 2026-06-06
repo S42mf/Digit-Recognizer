@@ -35,40 +35,44 @@ MNISTによる影響
 
 ##BPNNの構成
 
-層     　　サイズ     活性化関数
-入力層     784
-隠れ層1    512       ReLU
-隠れ層2    256       ReLU
-出力層     10        Softmax
+## 4. 条件
 
-##CNNの構成
+### BPNNの構成
 
-層             サイズ　　　　活性化関数　  
-入力層          28*28*1
-Conv2D         32フィルタ    ReLU
-MaxPooling2D   2*2 
-Conv2D         64フィルタ    ReLU
-MaxPooling2D   2*2 
-Flatten
-__全結合層__
-隠れ層1    512       ReLU
-隠れ層2    256       ReLU
-出力層     10        Softmax
+| 層 | サイズ | 活性化関数 |
+|------|--------|------------|
+| 入力層 | 784 | — |
+| 隠れ層1 | 512 | ReLU |
+| 隠れ層2 | 256 | ReLU |
+| 出力層 | 10 | Softmax |
 
-##その他の条件
-・optim
-　　Adam
-・learning_rate
-　　0.001
-・loss
-　　sparse_categorical_crossentropy
-・metrics
-　　accuracy
-・epochs
-　　10
-・batch_size
-　　128
-・validation_split
+
+### CNNの構成
+
+| 層 | サイズ | 活性化関数 |
+|------|--------|------------|
+| 入力層 | 28×28×1 | — |
+| Conv2D | 32フィルタ（3×3） | ReLU |
+| MaxPooling2D | 2×2 | — |
+| Conv2D | 64フィルタ（3×3） | ReLU |
+| MaxPooling2D | 2×2 | — |
+| Flatten | — | — |
+| 隠れ層1 | 512 | ReLU |
+| 隠れ層2 | 256 | ReLU |
+| 出力層 | 10 | Softmax |
+
+
+### その他の条件（両モデル共通）
+
+| パラメータ | 値 |
+|------------|-----|
+| optimizer | Adam |
+| learning_rate | 0.001 |
+| loss | sparse_categorical_crossentropy |
+| metrics | accuracy |
+| epochs | 10 |
+| batch_size | 128 |
+| validation_split | 0.1 |
 　　0.1
 
 
