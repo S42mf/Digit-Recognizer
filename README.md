@@ -1,4 +1,4 @@
-#Digit REcognizer - BPNN vs CNN
+## Digit REcognizer - BPNN vs CNN
 
 MNISTの手書き数字認識タスクにおいて、BPNNとCNNの精度を比較したプロジェクト
 
