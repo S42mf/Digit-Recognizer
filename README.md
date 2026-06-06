@@ -84,10 +84,10 @@ bpnn-vs-cnn-experiment/
 
 ├── README.md
 
-├── notebooks/
+└── notebooks/
 
-   ├── preprocessing.ipynb    # 共通前処理
+     ├── preprocessing.ipynb    # 共通前処理
    
-   ├── model_bpnn.ipynb       # BPNNの構造
+     ├── model_bpnn.ipynb       # BPNNの構造
    
-   └── model_cnn.ipynb        # CNNの構造
+     └── model_cnn.ipynb        # CNNの構造
