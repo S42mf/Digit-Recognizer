@@ -8,6 +8,7 @@ kaggleスコア
 
 model   score
 BPNN    0.97603
+
 CNN     0.98817
 
 **留意点
