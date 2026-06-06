@@ -64,7 +64,7 @@ MNISTによる影響
 
 ### その他の条件（両モデル共通）
 
-| パラメータ | 値 |
+| パラメータ |  |
 |------------|-----|
 | optimizer | Adam |
 | learning_rate | 0.001 |
@@ -73,8 +73,6 @@ MNISTによる影響
 | epochs | 10 |
 | batch_size | 128 |
 | validation_split | 0.1 |
-　　0.1
-
 
 
 ## 3.工夫した点
